@@ -1,0 +1,19 @@
+package oops_lms;
+
+public class Decimaldemo {
+
+	public static void main(String[] args) {
+		Flight f=new Flight();
+		f.fly();
+		generateTicketPrice();
+	}
+	public static void generateTicketPrice()
+	{
+		double ticketPrice=12000.753542;
+		DecimalFormat df=new DecimalFormat("#.00");
+		System.out.println("Seat number:"+df.format(ticketPrice));
+		
+		
+	}
+
+}
