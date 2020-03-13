@@ -1,0 +1,27 @@
+package oops_lms;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class DateEx {
+	public static void main(String[]args)
+	{
+		//create Date object
+		Date d=new Date();
+		//Display Date
+		System.out.println(d);
+		//create another Date object
+		Date d1=new Date(d.getTime()+1000);
+		//display dates using Date class methods
+		System.out.println(d.after(d1));
+		System.out.println(d.before(d1));
+		System.out.println(d1.compareTo(d));
+		System.out.println(d.compareTo(d1));
+		
+		SimpleDateFormat sdf=new SimpleDateFormat("M-F-Y Z");
+		Date dob=new Date("02/10/1975");
+		System.out.println("My birthday is on "+sdf.format(dob));
+		
+		
+	}
+
+}
