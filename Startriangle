@@ -1,0 +1,26 @@
+package oops_lms;
+
+public class Startriangle {
+	public static void main(String[]args){
+	int counter=1;
+	
+	while(counter<=3)
+	{
+		for (int i=counter;i<=4;i++)
+		{
+			if(i%3!=0)
+		{
+			System.out.print(" * ");
+		}else
+		{
+			System.out.print( " " );
+		}
+		}
+		System.out.println();
+		counter++;
+		
+	}
+	}
+		
+
+}
