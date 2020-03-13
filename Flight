@@ -1,0 +1,20 @@
+package oops_lms;
+
+public class Flight extends Bird {
+	//properties
+	public String flightName;
+	public String airLines;
+	Flight()
+	{
+		legs=0;
+		wings=2;
+		flightName="504";
+		airLines="Air India";
+	}
+	@Override
+	public void fly()
+	{
+	System.out.println(airLines+" "+flightName+"  taking off...");
+	
+	}
+}
