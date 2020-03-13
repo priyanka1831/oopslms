@@ -1,0 +1,37 @@
+package oops_lms;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateFormat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           Date d=new Date();
+           SimpleDateFormat date =new SimpleDateFormat("E");
+           String day=date.format(d);
+           System.out.println(day);
+           switch (day.trim()){
+           
+           case "Mon" : System.out.println("red");
+           break;
+           case "Tue" : System.out.println("Green");
+           break;
+           case "Wed" : System.out.println("Blue");
+           break;
+           case "Thu" : System.out.println("Yellow");
+           break;
+           case "Fri" : System.out.println("White");
+           break;
+           case "Sat" : System.out.println("Black");
+           break;
+           case "Sun" : System.out.println("Parrotgreen");
+           break;
+           default : System.out.println("Invalid condition");
+         
+           
+           }
+
+
+	}
+
+}
